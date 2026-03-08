@@ -1,3 +1,5 @@
 fastapivenv
-Basics/__pycache*
+1_Basics/__pycache*
 desktop.ini
+2_Data_validation/__pycache*
+3_todo/__pycache*
