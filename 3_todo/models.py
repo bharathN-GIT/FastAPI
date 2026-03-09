@@ -1,8 +1,10 @@
 from database import Base
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 
+
 class Users(Base):
     __tablename__ = 'users'
+
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String, unique=True)
     username = Column(String, unique=True)
@@ -12,8 +14,10 @@ class Users(Base):
     is_active = Column(Boolean, default=True)
     role = Column(String)
 
-class Todos(Base): #inherited Base and added table schema
+
+class Todos(Base):
     __tablename__ = 'todos'
+
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String)
     description = Column(String)
